@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page 1</title>
+</head>
+<body><center>
+    <div class="container">
+        <h2>S</h2>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="index2.html">Events</a></li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </div>
+    <table>
+        <tr>
+        <td>
+            <img id="pic1" src="p1.jpg"><br>
+            <button id="changepic1">Change Image</button>
+        </td>
+        <td>
+            <img id="pic2" src="p2.jpg"><br>
+            <button id="changepic2">Change Image</button>
+        </td>
+        <td>
+            <img id="pic3" src="p3.jpg"><br>
+            <button id="changepic3">Change Image</button>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe id="vid1" width="380" height="250" src="https://www.youtube.com/embed/xaVosyXPDes?si=NgIx3ThvhAFjaX_z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button id="changevid1">Change Video</button>
+            </td>
+            <td>
+                <iframe id="vid2" width="380" height="250" src="https://www.youtube.com/embed/Izb4wB4RXwQ?si=9EbvzxgRjR1rnMGj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button id="changevid2">Change Video</button>
+            </td>
+            <td>
+                <iframe id="vid3" width="380" height="250" src="https://www.youtube.com/embed/xaVosyXPDes?si=NgIx3ThvhAFjaX_z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button id="changevid3">Change Video</button>
+            </td>
+        </tr>
+    </table></center>
+    <script>
+const imageElement1 = document.getElementById('pic1');
+const buttonElement1 = document.getElementById('changepic1');
+buttonElement1.addEventListener('click', function() {
+    imageElement1.src = 'newp1.jpg';
+    imageElement1.alt = 'Adifferent image';
+buttonElement1.textContent = 'Image Changed!';
+});
+const imageElement2 = document.getElementById('pic2');
+const buttonElement2 = document.getElementById('changepic2');
+buttonElement2.addEventListener('click', function() {
+    imageElement2.src = 'newp2.jpg';
+    imageElement2.alt = 'Adifferent image';
+buttonElement2.textContent = 'Image Changed!';
+});
+const imageElement3 = document.getElementById('pic3');
+const buttonElement3 = document.getElementById('changepic3');
+buttonElement3.addEventListener('click', function() {
+    imageElement3.src = 'newp3.jpg';
+    imageElement3.alt = 'Adifferent image';
+buttonElement3.textContent = 'Image Changed!';
+});
+const videoElement1 = document.getElementById('vid1');
+const buttonElement4 = document.getElementById('changevid1');
+buttonElement4.addEventListener('click', function() {
+    videoElement1.src = 'newvid1.mp4';
+buttonElement4.textContent = 'Video Changed!';
+});
+const videoElement2 = document.getElementById('vid2');
+const buttonElement5 = document.getElementById('changevid2');
+buttonElement2.addEventListener('click', function() {
+    videoElement2.src = 'newvid2.mp4';
+buttonElement5.textContent = 'Video Changed!';
+});
+const videoElement3 = document.getElementById('vid3');
+const buttonElement6 = document.getElementById('changevid3');
+buttonElement3.addEventListener('click', function() {
+    videoElement3.src = 'newvid3.mp4';
+buttonElement6.textContent = 'Video Changed!';
+});
+    </script>
+</body>
+</html>

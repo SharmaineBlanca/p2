@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Page 2</title>
+</head>
+<body>
+    <div class="container">
+        <h2>S</h2>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="index.html">Events</a></li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </div>
+    <h2>The onclick Event</h2>
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+
+<button onclick="myFunction1()">Click me</button>
+
+<p id="demo"></p>
+<h2>The blur Event</h2>
+
+Enter your name: <input type="text" id="fname" onblur="myFunction2()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction3()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+
+<h2>The ondblclick Event</h2>
+
+<p ondblclick="myFunction4()">Double-click this paragraph to trigger a function.</p>
+
+<p id="demo"></p>
+
+<h2>The focusin Event</h2>
+
+Enter your name: <input type="text" onfocusin="myFunction(this)">
+
+<p>When the input field gets focus, a function changes the background-color.</p>
+
+<script>
+function myFunction5(x) {
+  x.style.background = "yellow";
+}
+function myFunction4() {
+  document.getElementById("demo").innerHTML += "Hello World ";
+}
+
+function myFunction3() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+
+function myFunction1() {
+  let x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+</body>
+</html>
